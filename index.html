@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title></title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Create your custom map method (myMap), which will work exactly similar to Array.map().
+let myMap = [1,2,3,4,5,6,7,8,9,];
+let mapresult = myMap.map(function(val,index,arr){
+    // console.log('val:',val,'index:',index,'arr:',arr);
+    return(val*2);
+});
+
+// Create your custom forEach method (myForEach), which will work exactly similar to Array.forEach().
+let arr1 = ['vivek','ajay','puja',2,23,'purv'];
+// arr1.forEach(element =>console.log(element) );
+
+
+// Create your custom filter method (myFilter), which will work exactly similar to Array.filter().
+ let age = [18,20,23,27,30,40,55,60];
+ let result = age.filter(myFilter);
+
+ function myFilter(age){
+    return age >= 18;
+
+ }
+
+
+//  Create your custom reduce method (myReduce), which will work exactly similar to Array.reduce().
+
+let arr2 = [10,20,12,14,56];
+function add(a,b){ return a+b}
+function foo(a,b){return a.contacat9(b)}
+
+Array.prototype.reduce2 = function () {
+    let result = 0;
+    for(let i=0; i<arguments.length;i++){
+        result += arguments[i];
+    }
+    return result;
+};
+console.log(a.reduce(add),a.reduce2(add))
+console.log(a.reduce(add,10),a.reduce2(add,10))
+
+ 
+
+
+
+</script>
+</html>
